@@ -5,14 +5,16 @@ import GoogleIcon from "@mui/icons-material/Google";
 
 
 
-import app_config from "..../config";
+import app_config from "../../config";
 import "./signup.css";
 import Swal from "sweetalert2";
+import { useNavigate } from "react-router-dom";
+
 
 const Login = () => {
   const url = app_config.api_url;
 
-
+  const navigate = useNavigate();
   
   const loginForm = {
     emailAddress: "",
@@ -52,6 +54,7 @@ const Login = () => {
       })
       .then((data) => {
         console.log(data);
+        navigate('/user/dashboard');
       });
   };
 

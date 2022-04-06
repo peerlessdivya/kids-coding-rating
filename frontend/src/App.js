@@ -1,15 +1,16 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import Main from "./components/main";
 import Home from "./components/main/home";
-import './App.css';
+import "./App.css";
 import Login from "./components/main/login";
 import Signup from "./components/main/signup";
 import Admin from "./components/admin";
-import Dashboard from "./components/admin/dashboard";
 import User from "./components/user";
-import Vender from "./components/vender";
-import AddPlatform from "./components/vender/addPlatform";
-
+import AddPlatform from "./components/admin/addPlatform";
+import BrowsePLatform from "./components/main/browsePlatform";
+import AdminDashboard from "./components/admin/dashboard";
+import UserDashboard from "./components/user/dashboard";
+import UserProfile from "./components/user/profile";
 function App() {
   return (
     <div>
@@ -17,26 +18,23 @@ function App() {
         <Routes>
           <Route element={<Main />} path="main">
             <Route element={<Home />} path="home" />
-            <Route element={<Login/>} path = "login"/>
-             <Route element={<Signup/>} path ="signup"/>
-             
-             </Route>
-            
+            <Route element={<Login />} path="login" />
+            <Route element={<Signup />} path="signup" />
+            <Route element={<BrowsePLatform/>} path="browsePlatform"/>
+          </Route>
 
           <Route element={<Admin />} path="admin">
-            <Route element={<Dashboard />} path="dashboard" />
-            
-          </Route> 
+            <Route element={<AdminDashboard />} path="dashboard" />
+              <Route element={<AddPlatform />} path="addplatform" />
+          </Route>
 
+          <Route element={<User />} path="user">
+            <Route element={<UserDashboard />} path="dashboard" />
+            <Route element={<UserProfile/>} path="profile"/>
 
-          <Route element={<User/>} path="user">
-            <Route element={<Dashboard/>} path = "dashboard"/>
-            </Route>
+          </Route>
 
-            <Route element={<Vender/>} path="vender">
-             <Route element={<AddPlatform/>} path="addPlatform"/>
-
-            </Route>
+          <Route element={<Navigate to="/main/home" />} path="" />
         </Routes>
       </BrowserRouter>
     </div>

@@ -13,7 +13,7 @@ const Footer = () => {
     return(
         <Box>
         <Container>
-            <row>
+            <Row>
             <Column>
             <Heading>Learn</Heading>
             <FooterLink href="#">Algorithims</FooterLink>
@@ -58,7 +58,7 @@ const Footer = () => {
               </i>
             </FooterLink>
           </Column>
-            </row>
+            </Row>
         </Container>
 
         </Box>

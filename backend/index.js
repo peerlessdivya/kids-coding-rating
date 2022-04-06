@@ -4,7 +4,8 @@ const port = 5000;
 
 const cors = require("cors");
 
-const userRouter = require("./routers/userRouter");
+const userRouter = require("./router/userRouter");
+const platformRouter = require("./router/platformRouter");
 
 app.use(
   cors({
@@ -14,6 +15,7 @@ app.use(
 app.use(express.json());
 
 app.use("/user", userRouter);
+app.use("/platform", platformRouter);
 
 app.listen(port, () => {
   console.log("server started");

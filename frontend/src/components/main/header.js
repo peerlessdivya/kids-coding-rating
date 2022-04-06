@@ -24,7 +24,7 @@ const Header = (props) => {
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
               <NavLink
-                to="/home"
+                to="/main/home"
                 activeClassName="active"
                 className="nav-link"
                 aria-current="page"
@@ -34,25 +34,17 @@ const Header = (props) => {
             </li>
             <li className="nav-item">
               <NavLink
-                to="/login"
+                to="/main/login"
                 activeClassName="active"
                 className="nav-link"
               >
                 Login
               </NavLink>
             </li>
+            
             <li className="nav-item">
               <NavLink
-                to="/event"
-                activeClassName="active"
-                className="nav-link"
-              >
-                Dashboard
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink
-                to="/signup"
+                to="/main/signup"
                 activeClassName="active"
                 className="nav-link"
               >
