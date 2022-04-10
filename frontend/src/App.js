@@ -8,6 +8,7 @@ import Admin from "./components/admin";
 import User from "./components/user";
 import AddPlatform from "./components/admin/addPlatform";
 import BrowsePLatform from "./components/main/browsePlatform";
+import ManagePlatform from "./components/main/managePlatform";
 import AdminDashboard from "./components/admin/dashboard";
 import UserDashboard from "./components/user/dashboard";
 import UserProfile from "./components/user/profile";
@@ -21,6 +22,7 @@ function App() {
             <Route element={<Login />} path="login" />
             <Route element={<Signup />} path="signup" />
             <Route element={<BrowsePLatform/>} path="browsePlatform"/>
+            <Route element={<ManagePlatform/>} path="managePlatform"/>
           </Route>
 
           <Route element={<Admin />} path="admin">

@@ -1,7 +1,8 @@
 import { AccountCircle, Dashboard } from "@mui/icons-material";
 import { Outlet } from "react-router-dom";
-import Sidebar from "../sidebar";
-import Footer from "./footer";
+
+
+
 import Header from "./header";
 
 
@@ -25,9 +26,9 @@ const Main = () => {
       <Header />
       <Outlet />
       {/* <Footer /> */}
-      <Sidebar sidebarOptions = {sidebarOptions}>
-        <Outlet />
-      </Sidebar>
+      
+        
+      
     </>
   );
 };
