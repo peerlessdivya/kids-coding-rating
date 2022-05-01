@@ -1,17 +1,30 @@
-import '../../images/pic.png'
+  
+
 const Home = () => {
-    
+
+  return <div>
+  <h3>World’s First Online Coding & Experiential Learning Platform
+    Live & Interactive Sessions by Experts
+    for young kids of age 6-18
+   </h3>
+</div>
+
+}
+
+  // const home = createMuiTheme({
+  //   palette: {
+  //     background: {
+  //       default: "#e4f0e2"
+  //     }
+  //   },
+  // });
   
-    return (
-      <div>
-          <header>
-            <h1> </h1>
-          </header>
-          <div className='image'>
-          <img src="/images/pic.png" alt="pic"/>
-          </div>
-      </div>
-    );
-  };
-  
-  export default Home;
+  // const themeDark = createMuiTheme({
+  //   palette: {
+  //     background: {
+  //       default: "#222222",
+  //     }
+  //   },
+  // });
+
+export default Home;

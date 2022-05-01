@@ -204,7 +204,7 @@ export default function Login() {
           sm={4}
           md={7}
           sx={{
-             backgroundImage: "url(https://www.google.com/search?q=kids+images+with+computer&rlz=1C1CHBF_enIN983IN983&sxsrf=APq-WBuMcgxym9kO1aBqZJn7vkFhSfXN1A:1650081171723&tbm=isch&source=iu&ictx=1&vet=1&fir=hfMkDEtXXgi1oM%252CVKyVRh82G9PEDM%252C_%253BjWAyLZa6d9ZfIM%252C6DCKQcFYLleMfM%252C_%253BWjisUbqiAtlPEM%252C-U8VKP5rJNY32M%252C_%253B8FwAGTYVHJTbxM%252COeWvVDee8fxR0M%252C_%253Bw6bkKZWB4KFTrM%252CZyTM46oHes56DM%252C_%253B7jn7BW1RpJXd-M%252CUZubM6AaU0I48M%252C_%253BOA72Pe4FFCE1FM%252CDs9IZgWuP559mM%252C_%253BAzQPRVPxS5oVGM%252CUZubM6AaU0I48M%252C_%253Bb2MWwPp3xJhGTM%252C-U8VKP5rJNY32M%252C_%253BiTpQKHwsZHjARM%252C1RDo5_ZMDKfGHM%252C_%253BE4ewaOJVyouKMM%252C6DCKQcFYLleMfM%252C_%253BC5h0XjHHcd8-3M%252CAZDmD0txAmqvhM%252C_%253BdijY0D0to80xGM%252CYoyUJXHyxY1D1M%252C_&usg=AI4_-kR6JUlIUTNgA3NGXtbRChTOUyJzGg&sa=X&ved=2ahUKEwj5gd2w15f3AhXVR2wGHbJOAMgQ9QF6BAgDEAE#imgrc=hfMkDEtXXgi1oM)",
+             backgroundImage: "url(http://localhost:5000/images/abc.jpg)",
 
             backgroundRepeat: "no-repeat",
             backgroundColor: (t) =>
