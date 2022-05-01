@@ -2,7 +2,7 @@ import { Formik } from "formik";
 import { Button, Card, CardContent } from "@mui/material";
 import GoogleIcon from "@mui/icons-material/Google";
 
-import "./signup.css";
+/*import "./signup.css";*/
 import Swal from "sweetalert2";
 import app_config from "../../config";
 
@@ -102,3 +102,5 @@ const Signup = () => {
 };
 
 export default Signup;
+
+
