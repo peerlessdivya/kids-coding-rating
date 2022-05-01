@@ -8,7 +8,7 @@ import Admin from "./components/admin";
 import User from "./components/user";
 import AddPlatform from "./components/admin/addPlatform";
 import BrowsePLatform from "./components/main/browsePlatform";
-import ManagePlatform from "./components/main/managePlatform";
+import ManagePlatform from "./components/admin/managePlatform";
 import AdminDashboard from "./components/admin/dashboard";
 import UserDashboard from "./components/user/dashboard";
 import UserProfile from "./components/user/profile";
@@ -21,19 +21,19 @@ function App() {
             <Route element={<Home />} path="home" />
             <Route element={<Login />} path="login" />
             <Route element={<Signup />} path="signup" />
-            <Route element={<BrowsePLatform/>} path="browsePlatform"/>
-            <Route element={<ManagePlatform/>} path="managePlatform"/>
+            <Route element={<BrowsePLatform />} path="browsePlatform" />
           </Route>
 
           <Route element={<Admin />} path="admin">
             <Route element={<AdminDashboard />} path="dashboard" />
-              <Route element={<AddPlatform />} path="addplatform" />
+            <Route element={<AddPlatform />} path="addplatform" />
+            <Route element={<ManagePlatform />} path="managePlatform" />
+            <Route element={<UserProfile />} path="profile" />
           </Route>
 
           <Route element={<User />} path="user">
             <Route element={<UserDashboard />} path="dashboard" />
-            <Route element={<UserProfile/>} path="profile"/>
-
+            <Route element={<UserProfile />} path="profile" />
           </Route>
 
           <Route element={<Navigate to="/main/home" />} path="" />

@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+body{
+  height: 100vh;
+}
+
+.mng-pltfm{
+  background: url(https://thumbs.dreamstime.com/b/marble-study-desk-keyboard-pen-tablet-coffee-plants-background-i-s-best-designers-developers-120079778.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
