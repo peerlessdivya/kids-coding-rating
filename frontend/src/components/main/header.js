@@ -25,7 +25,6 @@ const Header = (props) => {
             <li className="nav-item">
               <NavLink
                 to="/main/home"
-                activeClassName="active"
                 className="nav-link"
                 aria-current="page"
               >
@@ -35,7 +34,6 @@ const Header = (props) => {
             <li className="nav-item">
               <NavLink
                 to="/main/login"
-                activeClassName="active"
                 className="nav-link"
               >
                 Login
@@ -45,10 +43,17 @@ const Header = (props) => {
             <li className="nav-item">
               <NavLink
                 to="/main/signup"
-                activeClassName="active"
                 className="nav-link"
               >
                 Sign Up
+              </NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink
+                to="/main/browsePlatform"
+                className="nav-link"
+              >
+                Browse Platforms
               </NavLink>
             </li>
             
