@@ -12,7 +12,7 @@ const BrowsePLatform = () => {
 
   
   const fetchPlatformData = () => {
-    fetch(url + "/platform/getall"  )
+    fetch(url + "/platform/getall")
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
@@ -24,8 +24,8 @@ const BrowsePLatform = () => {
   const showPlatform = () => {
     if (!loading) {
       return platformList.map((platform, index) => (
-        <Card>
-          <Grid container>
+        <Card sx={{mt : 5}}>
+          <Grid container spacing={5}>
           <Grid item md={4}>
 
             </Grid>
@@ -64,49 +64,6 @@ const BrowsePLatform = () => {
                     </div>
                 </div>
             </div>
-            <table class="table table-bordered">
-                <thead>
-                    <tr>
-                        <th>Name</th>
-                        <th>Discription</th>
-                        <th>Reviews</th>
-                        <th>Average Rating</th>
-                      
-                    </tr>
-                </thead>   
-                <tbody>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>
-							<a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
-                            <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
-                            <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>
-							<a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
-                            <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
-                            <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td>
-							<a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
-                            <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
-                            <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
-                        </td>
-                    </tr>      
-                </tbody>
-            </table>
 
                        
                         {showPlatform()}

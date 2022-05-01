@@ -53,6 +53,11 @@ const AddPlatform = () => {
 
   };
 
+  const uploadThumbnail = (e) => {
+      const file = e.target.files[0];
+      const fd = new FormData();
+  }
+
   return (
     <div>
       <Container component="main" maxWidth="xs">
