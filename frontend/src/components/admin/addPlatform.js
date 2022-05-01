@@ -59,7 +59,7 @@ const AddPlatform = () => {
   }
 
   return (
-    <div>
+    <div className="add-pltfm">
       <Container component="main" maxWidth="xs">
         <CssBaseline />
 

@@ -3,7 +3,7 @@
 const UserProfile = () => {
   
     return (
-        
+        <div className="profile">
       <div class="container bootstrap snippet">
          <div class="row">
         <div class="col-sm-10"><h1>User name</h1></div>
@@ -274,7 +274,7 @@ const UserProfile = () => {
 
         </div>
     </div>
-                                                      
+    </div>                      
     );
   };
   
